@@ -389,7 +389,11 @@ Real companies using x402 in production with proven scale and transaction volume
 
 
 
-- [Stock Bloc](https://stockbloc.ai.studio) - Machine-native financial intelligence API with x402 v2 per-call USDC payments on Base ($0.01–$0.35/call, 100 free credits on agent self-registration, no sign-in). ([GitHub](https://github.com/Jaywestphilly/stock-bloc-skill))### Games & On-Chain Apps
+- [Stock Bloc](https://stockbloc.ai.studio) - Machine-native financial intelligence API with x402 v2 per-call USDC payments on Base ($0.01–$0.35/call, 100 free credits on agent self-registration, no sign-in). ([GitHub](https://github.com/Jaywestphilly/stock-bloc-skill))s
+
+
+
+### Games & On-Chain Apps
 - [frenex](https://frenex.ai) - Autonomous AI agent prediction arena on Base. Agents register free via MCP, publish opinions, stake parimutuel prediction markets, and duel rivals; humans spectate on the live dashboard. Reads are free; writes are pay-per-call in USDC from $0.001 (x402 v2, exact scheme). ([MCP Server](https://betvnyfqoduzmiimcjyj.supabase.co/functions/v1/mcp-server) | [Docs](https://github.com/frenexai/frenex-mcp))
 - **[Flipr](https://flipr-x402.fly.dev)** — On-chain coin flip game on Base (Chainlink VRF). Agents pay live USDC quote (~$1.23) per flip; pots paid in ETH. Two pots: 2-hour competitive (longest streak wins) and target-streak jackpot (hit N consecutive heads to win). Free decision endpoints (`/preview`, `/opportunity`) so agents can compute ROI before paying — no x402 wallet needed to evaluate. Speaks x402, MCP, and A2A simultaneously. ([OpenAPI](https://flipr-x402.fly.dev/openapi.json)) ([Agent Card](https://flipr-x402.fly.dev/.well-known/agent.json)) ([MCP Server](https://flipr-x402.fly.dev/mcp)) ([Game Info](https://flipr-x402.fly.dev/game-info))
 - **[HotBotOrNot](https://hotbotornot.xyz)** — Hot-or-not rating game for AI agents on Base mainnet. Pay $1 USDC via x402 to upload a bot, then rate other bots 1–10 and climb the leaderboard. Humans spectate. Agent-ready with a drop-in skill. ([Skill](https://hotbotornot.xyz/skill.md)) ([Agent Card](https://hotbotornot.xyz/.well-known/agent.json)) ([OpenAPI](https://hotbotornot.xyz/api/openapi)) ([llms.txt](https://hotbotornot.xyz/llms.txt))
@@ -861,6 +865,7 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 
 - [Stock Bloc Skill](https://github.com/Jaywestphilly/stock-bloc-skill) - Agent skill connecting AI agents to the Stock Bloc financial intelligence API: financial market data, SEC/13F intelligence, quant scores, and forecasts, paid per API call in USDC on Base via x402 v2.### Agent Frameworks
 
+### Agent Frameworks
 - [ATXP](https://github.com/atxp-dev/atxp) - Agent identity and funding platform. One command — `npx atxp agent register` — gives an agent a USDC wallet on Base, an `@atxp.email` inbox, a phone number, and 100+ paid tools (web search, image/video generation, LLM gateway). x402-compatible; agents can pay x402 endpoints directly from their ATXP balance. $5 free credit, no KYC. ([Docs](https://docs.atxp.ai))
 - [NEAR AI](https://near.ai) - Cross-chain agent settlements.
 - [Phidata Agents](https://github.com/phidatahq/phidata) - Multi-modal agents with x402.
