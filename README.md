@@ -377,7 +377,7 @@ Real companies using x402 in production with proven scale and transaction volume
 
 - [paypi](https://pay.ansht.tech) - Solana intelligence for AI agents, settling in USDC on Solana + Base via Coinbase CDP facilitator (x402 v2 with Bazaar discovery). Pay-per-call: Solana transaction decode ($0.005), transaction simulation ($0.005), and Kamino liquidation-risk intelligence ($0.05). No API keys, no signup. ([Discovery](https://pay.ansht.tech/.well-known/x402) | [MCP](https://pay.ansht.tech/mcp/manifest))
 
-- [Recompete Radar](https://recompete.melchiorlabs.com) - Source-linked U.S. federal contract award expiration evidence from USAspending.gov for research agents. Returns recorded period-of-performance end dates, agency and recipient context, obligations, and official award links for $0.03 USDC per successful request on Base or Solana via x402 v2; it reports public records and does not predict recompetes. ([OpenAPI](https://recompete.melchiorlabs.com/openapi.json) | [Discovery](https://recompXete.melchiorlabs.com/.well-known/x402) | [llms.txt](https://recompete.melchiorlabs.com/llms.txt))
+- [Recompete Radar](https://recompete.melchiorlabs.com) - Source-linked U.S. federal contract award expiration evidence from USAspending.gov for research agents. Returns recorded period-of-performance end dates, agency and recipient context, obligations, and official award links for $0.03 USDC per successful request on Base or Solana via x402 v2; it reports public records and does not predict recompetes. ([OpenAPI](https://recompete.melchiorlabs.com/openapi.json) | [Discovery](https://recompete.melchiorlabs.com/.well-known/x402) | [llms.txt](https://recompete.melchiorlabs.com/llms.txt))
 
 - [Mart402](https://mart402.com) - Web and PDF extraction APIs for AI agents with hallucination-guarded OCR: dual-engine consensus (VLM + traditional OCR), calibrated confidence, and honest disagree verdicts; Japanese-strong. Also invoice verification, schema-driven extraction, and JP company profiles. $0.001-$0.02 USDC per call on Base via x402 (CDP facilitator); free identical sandbox on Base Sepolia. Measured latency and success stats published. ([Docs](https://mart402.com/agents.md)) ([Sandbox](https://mart402.dev)) ([Stats](https://mart402.com/stats)) ([GitHub](https://github.com/tanaka-77/mart402-agent-kit))
 
@@ -387,11 +387,7 @@ Real companies using x402 in production with proven scale and transaction volume
 
 - [modelprices.xyz](https://modelprices.xyz) - Normalized LLM market data: per-token prices, context windows and capability limits, and a price-change feed for 2,000+ AI models across 70+ providers, cross-checked and refreshed hourly. Single-model lookups $0.002, cheapest-model queries $0.005, full tables $0.01-0.02 — USDC on Base, no signup. ([OpenAPI](https://modelprices.xyz/openapi.json)) ([llms.txt](https://modelprices.xyz/llms.txt)) ([MCP](https://modelprices.xyz/mcp)) ([GitHub](https://github.com/pennyforgehq/modelprices))
 
-
-
-- [Stock Bloc](https://stockbloc.ai.studio) - Machine-native financial intelligence API with x402 v2 per-call USDC payments on Base ($0.01–$0.35/call, 100 free credits on agent self-registration, no sign-in). ([GitHub](https://github.com/Jaywestphilly/stock-bloc-skill))s
-
-
+- [Stock Bloc](https://stockbloc.ai.studio) - SEC filing API for agents that diffs a company's latest 10-K or 10-Q risk factors against the prior filing, plus 13F institutional accumulation, SB Score and earnings prep data, $0.01 to $0.35 USDC per call on Base via x402 v2 with free JSON samples. ([OpenAPI](https://stockbloc.ai.studio/openapi.json) | [Discovery](https://stockbloc.ai.studio/.well-known/x402) | [Sample](https://stockbloc.ai.studio/api/v1/sec/job/sample))
 
 ### Games & On-Chain Apps
 - [frenex](https://frenex.ai) - Autonomous AI agent prediction arena on Base. Agents register free via MCP, publish opinions, stake parimutuel prediction markets, and duel rivals; humans spectate on the live dashboard. Reads are free; writes are pay-per-call in USDC from $0.001 (x402 v2, exact scheme). ([MCP Server](https://betvnyfqoduzmiimcjyj.supabase.co/functions/v1/mcp-server) | [Docs](https://github.com/frenexai/frenex-mcp))
@@ -863,9 +859,8 @@ x402-native GPU inference APIs that let agents pay autonomously for compute.
 - [Agent Media Toolkit](https://podcast-shorts-a2a-production.up.railway.app/) - 15 media & data tools for AI agents in one hosted MCP server: web search, news, page extraction, summarize, translate, moderate, script, text-to-voiceover, transcription, subtitles, and short-form video clip discovery/editing. Free tier over MCP for the lighter tools; premium media pay-per-call via x402 ($0.02–$3.00 USDC on Base). Streamable HTTP. ([GitHub](https://github.com/krakonjac300-pixel/agent-media-toolkit-mcp)) | ([MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=agent-media-toolkit))
 - [Santos Automation](https://api.santosautomation.com/mcp) - Website intelligence MCP server for AI agents (Streamable HTTP). Pay-per-call tools via x402 (USDC on Base mainnet): SSRF-guarded safe fetch, RSS/Atom/JSON feed parsing, page link maps, screenshots/PDF, page-to-markdown, schema-validated structured extraction, page summaries, quick and browser-rendered website audits, and agent-readiness scoring. No accounts or API keys; free daily preview endpoints. ([GitHub](https://github.com/thereal-baitjet/santos-audit-api)) | ([Website](https://www.santosautomation.com))
 
-- [Stock Bloc Skill](https://github.com/Jaywestphilly/stock-bloc-skill) - Agent skill connecting AI agents to the Stock Bloc financial intelligence API: financial market data, SEC/13F intelligence, quant scores, and forecasts, paid per API call in USDC on Base via x402 v2.### Agent Frameworks
-
 ### Agent Frameworks
+
 - [ATXP](https://github.com/atxp-dev/atxp) - Agent identity and funding platform. One command — `npx atxp agent register` — gives an agent a USDC wallet on Base, an `@atxp.email` inbox, a phone number, and 100+ paid tools (web search, image/video generation, LLM gateway). x402-compatible; agents can pay x402 endpoints directly from their ATXP balance. $5 free credit, no KYC. ([Docs](https://docs.atxp.ai))
 - [NEAR AI](https://near.ai) - Cross-chain agent settlements.
 - [Phidata Agents](https://github.com/phidatahq/phidata) - Multi-modal agents with x402.
